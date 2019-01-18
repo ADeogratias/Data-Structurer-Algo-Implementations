@@ -16,7 +16,7 @@ def rotate_array():
         k_times = k_times % len(array)  # the remainder will be the number of times the array will rotate
 
         print('\nprevious array', array, '\n')
-        array = array[-k_times:len(array)] + array[0:-k_times]  # the rotating elements take the first position and other elements after
+        array = array[-k_times:len(array)] + array[0:-k_times]  # rotating elements take the first position(s) & remaining elements after
 
     else:
         print("\nThe array length equals the k rotation times\n")
