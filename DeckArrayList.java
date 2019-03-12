@@ -53,8 +53,8 @@ public class DeckArrayList {
 
                 // Swap the card at position i, with the one at position randomIndex
                 temp = cards.get(i);
-                cards.add(i, cards.get(randomIndex));
-                cards.add(randomIndex, temp);
+                cards.set(i, cards.get(randomIndex));
+                cards.set(randomIndex, temp);
             }
         }
 
@@ -115,6 +115,7 @@ public class DeckArrayList {
             //testing how the deal method works
             testDeck.deal(9);
 //            System.out.println(testDeck.size);
+            
 
         }
 
